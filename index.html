@@ -8,5 +8,9 @@
   </head>
   <body>
     <div id="app"></div>
+    <script type="module" src="/src/main.ts">
+      const redirect = decodeURIComponent(location.search.split('redirect=')[1] || '');
+      if (redirect) history.replaceState(null, '', redirect);
+    </script>
   </body>
 </html>
