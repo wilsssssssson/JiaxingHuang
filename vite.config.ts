@@ -4,12 +4,11 @@ import vue from '@vitejs/plugin-vue'
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig({
-
+  base:process.env.VITE_BASE_URL,
   build: {
     outDir: "docs"
   },
-  plugins: [vue(),
-  ],
+  plugins: [vue(),],
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
