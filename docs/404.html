@@ -10,10 +10,6 @@
   </head>
   <body>
     <div id="app"></div>
-    <script>
-      const segmentCount = 1; 
-      const path = location.pathname.split('/').slice(0, 1 + segmentCount).join('/');
-      location.href = location.origin + path + '/?redirect=' + encodeURIComponent(location.href);
-    </script>
+
   </body>
 </html>
