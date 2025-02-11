@@ -9,21 +9,6 @@ export default defineConfig({
     outDir: "docs"
   },
   plugins: [vue(),
-    createHtmlPlugin({
-      minify: true,
-      pages: [
-        {
-          entry: 'src/main.ts',
-          filename: 'index.html',
-          template: 'index.html',
-        },
-        {
-          entry: 'src/main.ts',
-          filename: '404.html',
-          template: '404.html',
-        },
-      ],
-    }),
   ],
   resolve: {
     alias: {
