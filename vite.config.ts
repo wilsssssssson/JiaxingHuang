@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue'
-import { createHtmlPlugin } from 'vite-plugin-html';
 export default defineConfig({
-  base:'/JiaxingHuang/',
+  base:'/',
   build: {
     outDir: "docs"
   },
